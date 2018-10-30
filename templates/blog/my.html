@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black &amp; White</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href={% static "blog/css/style.css" %}/>
+    <link rel="stylesheet" type="text/css" href={% static "blog/css/reset.css" %}/>
+    <style>
+        #particles-js {
+            text-align: center;
+            margin: 0 auto;
+
+        }
+        p{
+            color:#FFFFFF;
+        }
+        #div1  {
+            float: left;
+            margin-left: 20%;
+            margin-top: 15%;
+            font-size: 20px;
+
+        }
+        #div2{
+            float: right;
+            margin-right: 20%;
+            margin-top: 15%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body >
+<div id="particles-js">
+    <div id="div1">
+        <img height="200px" width="200px" src={% static 'blog/img/qq.jpg' %}/>
+        <br>
+        <p>QQ: 3385459841</p>
+        <p>博主: 张三</p>
+    </div>
+    <div id="div2">
+        <img height="200px" width="200px" src={% static 'blog/img/wechat.png' %}/>
+        <br>
+        <p>微信: ZhangSan2018</p>
+        <p>邮箱: zhangsan@gmail.com</p>
+    </div>
+</div>
+<!-- scripts -->
+<script src={% static "blog/js/particles.min.js" %}></script>
+<script src={% static "blog/js/app.js" %}></script>
+</body>
+</html>
